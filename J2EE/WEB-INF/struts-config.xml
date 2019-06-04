@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+
+
+<!-- ================================================ Form Bean Definitions -->
+
+    <form-beans>
+         <form-bean name="login" type="Bean.LoginForm"></form-bean>
+         <form-bean name="gestion_maint" type="Bean.TypeMaintForm"></form-bean>
+         <form-bean name="gestion_specialite" type="Bean.TypeSpecialiteForm"></form-bean>
+         <form-bean name="gestion_station_maint" type="Bean.StationMaintForm"></form-bean>
+         <form-bean name="gestion_marque" type="Bean.MarqueVehiForm"></form-bean>
+         <form-bean name="gestion_papier" type="Bean.TypePapierForm"></form-bean>
+         <form-bean name="gestion_motif" type="Bean.TypeMotifArretForm"></form-bean>
+         <form-bean name="fiche_societe" type="Bean.FicheSocieteForm"></form-bean>
+         <form-bean name="upload" type="Bean.UploadForm"></form-bean>
+         <form-bean name="gestion_type_tiers" type="Bean.TypeTiersForm"></form-bean>
+         <form-bean name="gestion_ville" type="Bean.VilleForm"></form-bean>
+         <form-bean name="gestion_catego_vehi" type="Bean.CategorieVehiculeForm"></form-bean>
+         <form-bean name="gestion_energie" type="Bean.TypeEnergieForm"></form-bean>
+         <form-bean name="gestion_matiere" type="Bean.TypeMatiereForm"></form-bean>
+         <form-bean name="gestion_modele_vehi" type="Bean.ModeleVehiForm"></form-bean>
+         <form-bean name="gestion_article" type="Bean.TypeArticleForm"></form-bean>
+         <form-bean name="type_article" type="Bean.TypeNatArticleForm"></form-bean>
+         <form-bean name="gestion_unite" type="Bean.TypeUniteForm"></form-bean>
+         <form-bean name="fam_article_1" type="Bean.FamArticlePrinciForm"></form-bean>
+         <form-bean name="fam_article_2" type="Bean.FamArticleSecForm"></form-bean>
+         <form-bean name="gestion_centre" type="Bean.CentreForm"></form-bean>
+         <form-bean name="gestion_agence" type="Bean.AgenceForm"></form-bean>
+         <form-bean name="gestion_service" type="Bean.ServiceForm"></form-bean>
+         <form-bean name="gestion_magasin" type="Bean.MagasinForm"></form-bean>
+         <form-bean name="gestion_saison" type="Bean.SaisonForm"></form-bean>
+         <form-bean name="gestion_plan" type="Bean.PlanForm"></form-bean>
+         <form-bean name="gestion_qualite" type="Bean.QualiteForm"></form-bean>
+         <form-bean name="gestion_fonction" type="Bean.FonctionForm"></form-bean>
+         <form-bean name="gestion_tiers" type="Bean.TiersForm"></form-bean>
+         <form-bean name="gestion_agent" type="Bean.AgentForm"></form-bean>
+         <form-bean name="langue" type="Bean.LangueForm"></form-bean>
+         <form-bean name="gestion_articles" type="Bean.ArticleForm"></form-bean>
+         <form-bean name="gestion_carburant" type="Bean.TypeCarburantForm"></form-bean>
+         <form-bean name="gestion_typelub" type="Bean.TypeLubForm"></form-bean>
+         <form-bean name="gestion_vehicule" type="Bean.VehiculeForm"></form-bean>
+         <form-bean name="gestion_papiervehi" type="Bean.PapierVehiForm"></form-bean>
+         <form-bean name="affectaion_vehicule" type="Bean.AffectationVehiculeForm"></form-bean>
+         <form-bean name="gestion_type_bon" type="Bean.BonEssenceForm"></form-bean>
+         <form-bean name="gestion_vehi_motif_arret" type="Bean.VehiMotifArretForm"></form-bean>
+         <form-bean name="laisser_passer" type="Bean.LaisserPasserForm"></form-bean>
+         <form-bean name="gestion_utilisateur" type="Bean.UtilisateurForm"></form-bean>
+         <form-bean name="gestion_entrer_carburant" type="Bean.VehiEntrerCarburantForm"></form-bean>
+         <form-bean name="ordre_mission" type="Bean.OrdreMissionForm"></form-bean>
+         <form-bean name="transfert_bon" type="Bean.BonTransfertForm"></form-bean>
+         <form-bean name="aff_distance" type="Bean.DistDistanceForm"></form-bean>
+         <form-bean name="def_cpt" type="Bean.DistInitCptForm"></form-bean>
+   		 <form-bean name="distribution" type="Bean.BonDistributionForm"></form-bean>
+   
+
+   
+    </form-beans>
+
+         
+ 
+
+<!-- ========================================= Global Exception Definitions -->
+
+    <global-exceptions>
+        <!-- sample exception handler
+        <exception
+            key="expired.password"
+            type="app.ExpiredPasswordException"
+            path="/changePassword.jsp"/>
+        end sample -->
+    </global-exceptions>
+
+
+<!-- =========================================== Global Forward Definitions -->
+
+    <global-forwards>
+        <forward name="index" path="/index"/>
+         <forward name="out" path="/login.do?action=out"/>
+    </global-forwards>
+
+
+<!-- =========================================== Action Mapping Definitions -->
+
+    <action-mappings>
+<action path="/login"  scope="request" type="Action.LoginAction" name="login" validate="false"     >
+<forward name="ok" path="/Principale.jsp" redirect="false" />
+<forward name="pok" path="/connection.jsp" redirect="false" />
+</action>
+
+<action path="/gestion_maint"  scope="request" type="Action.TypeMaintAction" name="gestion_maint" validate="false"     >
+<forward name="ok" path="/Param_Type_Maint.jsp"></forward>
+</action>
+
+<action path="/gestion_specialite"  scope="request" type="Action.TypeSpecialiteAction" name="gestion_specialite" validate="false"     >
+<forward name="ok" path="/Param_Type_Specialite.jsp"></forward>
+</action>
+
+<action path="/gestion_station_maint"  scope="request" type="Action.StationMaintAction" name="gestion_station_maint" validate="false"     >
+<forward name="ok" path="/Param_Station_Maint.jsp"></forward>
+</action>
+
+<action path="/gestion_marque"  scope="request" type="Action.MarqueVehiAction" name="gestion_marque" validate="false"     >
+<forward name="ok" path="/Param_Marque_Vehi.jsp"></forward>
+</action>
+
+
+<action path="/gestion_papier"  scope="request" type="Action.TypePapierAction" name="gestion_papier" validate="false"     >
+<forward name="ok" path="/Param_Type_Papier.jsp"></forward>
+</action>
+
+<action path="/gestion_motif"  scope="request" type="Action.TypeMotifArretAction" name="gestion_motif" validate="false"     >
+<forward name="ok" path="/Param_Type_Motif_Arret.jsp"></forward>
+</action>
+
+<action path="/fiche_societe"  scope="request" type="Action.FicheSocieteAction" name="fiche_societe" validate="false"     >
+<forward name="ok" path="/Param_Fiche_Societe.jsp"></forward>
+</action>
+
+<action path="/gestion_type_tiers"  scope="request" type="Action.TypeTiersAction" name="gestion_type_tiers" validate="false"     >
+<forward name="ok" path="/Param_Type_Tiers.jsp"></forward>
+</action>
+
+<action path="/upload"  scope="request" type="Action.UploadAction" name="upload" validate="false"     >
+<forward name="ok" path="/Param_Fiche_Societe.jsp"></forward>
+</action>
+
+<action path="/gestion_ville"  scope="request" type="Action.VilleAction" name="gestion_ville" validate="false" >
+<forward name="ok" path="/Param_Ville.jsp"></forward>
+</action>
+
+<action path="/gestion_catego_vehi"  scope="request" type="Action.CategorieVehiculeAction" name="gestion_catego_vehi" validate="false"     >
+<forward name="ok" path="/Param_Categorie_Vehi.jsp"></forward>
+</action>
+
+<action path="/gestion_energie"  scope="request" type="Action.TypeEnergieAction" name="gestion_energie" validate="false"     >
+<forward name="ok" path="/Param_Type_Energie.jsp"></forward>
+</action>
+
+<action path="/gestion_matiere"  scope="request" type="Action.TypeMatiereAction" name="gestion_matiere" validate="false"     >
+<forward name="ok" path="/Param_Type_Matiere.jsp"></forward>
+</action>
+
+<action path="/gestion_modele_vehi"  scope="request" type="Action.ModeleVehiAction" name="gestion_modele_vehi" validate="false"     >
+<forward name="ok" path="/Param_Modele_Vehi.jsp"></forward>
+</action>
+
+
+<action path="/gestion_article"  scope="request" type="Action.TypeArticleAction" name="gestion_article" validate="false"     >
+<forward name="ok" path="/Param_Nature_Article.jsp"></forward>
+</action>
+
+<action path="/type_article"  scope="request" type="Action.TypeNatArticleAction" name="type_article" validate="false"     >
+<forward name="ok" path="/Param_Type_Article.jsp"></forward>
+</action>
+
+<action path="/gestion_unite"  scope="request" type="Action.TypeUniteAction" name="gestion_unite" validate="false"     >
+<forward name="ok" path="/Param_Unite.jsp"></forward>
+</action>
+
+<action path="/fam_article_1"  scope="request" type="Action.FamArticlePrinciAction" name="fam_article_1" validate="false"     >
+<forward name="ok" path="/Param_Fam_Article_Princi.jsp"></forward>
+</action>
+
+<action path="/fam_article_2"  scope="request" type="Action.FamArticleSecAction" name="fam_article_2" validate="false"     >
+<forward name="ok" path="/Param_Fam_Article_Sec.jsp"></forward>
+</action>
+
+<action path="/gestion_agence"  scope="request" type="Action.AgenceAction" name="gestion_agence" validate="false"     >
+<forward name="ok" path="/Param_Agence.jsp"></forward>
+</action>
+
+<action path="/gestion_centre"  scope="request" type="Action.CentreAction" name="gestion_centre" validate="false"     >
+<forward name="ok" path="/Param_Centre.jsp"></forward>
+</action>
+
+
+<action path="/gestion_service"  scope="request" type="Action.ServiceAction" name="gestion_service" validate="false"     >
+<forward name="ok" path="/Param_Service.jsp"></forward>
+</action>
+
+<action path="/gestion_magasin"  scope="request" type="Action.MagasinAction" name="gestion_magasin" validate="false"     >
+<forward name="ok" path="/Param_Magasin.jsp"></forward>
+</action>
+
+<action path="/gestion_saison"  scope="request" type="Action.SaisonAction" name="gestion_saison" validate="false"     >
+<forward name="ok" path="/Param_Saison.jsp"></forward>
+</action>
+
+<action path="/gestion_plan"  scope="request" type="Action.PlanAction" name="gestion_plan" validate="false"     >
+<forward name="ok" path="/Param_Plan.jsp"></forward>
+</action>
+
+<action path="/gestion_qualite"  scope="request" type="Action.QualiteAction" name="gestion_qualite" validate="false"     >
+<forward name="ok" path="/Param_Qualite_Fonction.jsp"></forward>
+</action>
+
+
+<action path="/gestion_fonction"  scope="request" type="Action.FonctionAction" name="gestion_fonction" validate="false"     >
+<forward name="ok" path="/Param_Fonction.jsp"></forward>
+</action>
+
+<action path="/gestion_tiers"  scope="request" type="Action.TiersAction" name="gestion_tiers" validate="false"     >
+<forward name="ok" path="/Param_Tiers.jsp"></forward>
+</action>
+
+<action path="/gestion_agent"  scope="request" type="Action.AgentAction" name="gestion_agent" validate="false"     >
+<forward name="ok" path="/Param_Agent.jsp"></forward>
+</action>
+
+<action path="/langue"  scope="request" type="Action.LangueAction" name="langue" validate="false"     >
+<forward name="ok" path="/Langue.jsp"></forward>
+</action>
+
+<action path="/gestion_articles"  scope="request" type="Action.ArticleAction" name="gestion_articles" validate="false"     >
+<forward name="ok" path="/Param_Article.jsp"></forward>
+</action>
+
+<action path="/gestion_carburant"  scope="request" type="Action.TypeCarburantAction" name="gestion_carburant" validate="false"     >
+<forward name="ok" path="/Param_Type_Carburant.jsp"></forward>
+<forward name="article" path="/gestion_carb_article.do?action=all"></forward>
+</action>
+
+<action path="/gestion_carb_article"  scope="request" type="Action.TypeCarbArticleAction" name="gestion_carburant" validate="false"     >
+<forward name="ok" path="/Param_Type_Carb_Article.jsp"></forward>
+</action>
+
+<action path="/gestion_typelub"  scope="request" type="Action.TypeLubAction" name="gestion_typelub" validate="false"     >
+<forward name="ok" path="/Param_Type_Lub.jsp"></forward>
+</action>
+
+<action path="/gestion_vehicule"  scope="request" type="Action.VehiculeAction" name="gestion_vehicule" validate="false"     >
+<forward name="ok" path="/Vehi_Vehicule.jsp"></forward>
+</action>
+
+<action path="/gestion_papiervehi"  scope="request" type="Action.PapierVehiAction" name="gestion_papiervehi" validate="false"     >
+<forward name="ok" path="/Vehi_Papier_Vehi.jsp"></forward>
+</action>
+
+<action path="/affectaion_vehicule"  scope="request" type="Action.AffectationVehiculeAction" name="affectaion_vehicule" validate="false"     >
+<forward name="ok" path="/Vehi_Affectation_Vehicule.jsp"></forward>
+</action>
+
+<action path="/affichage_affectaion_vehicule"  scope="request" type="Action.AffichageAffectationVehiculeAction" name="affectaion_vehicule" validate="false"     >
+<forward name="ok" path="/Vehi_Affichage_Affectation_Vehicule.jsp"></forward>
+</action>
+
+<action path="/gestion_type_bon"  scope="request" type="Action.BonEssenceAction" name="gestion_type_bon" validate="false"     >
+<forward name="ok" path="/Bon_Type_bon.jsp"></forward>
+</action>
+
+<action path="/gestion_vehi_motif_arret"  scope="request" type="Action.VehiMotifArretAction" name="gestion_vehi_motif_arret" validate="false"     >
+<forward name="ok" path="/Vehi_Motif_Arret.jsp"></forward>
+</action>
+
+
+<action path="/laisser_passer"  scope="session" type="Action.LaisserPasserAction" name="laisser_passer" validate="false"     >
+<forward name="ok" path="/Vehi_Laisser_Passer.jsp"></forward>
+</action>
+
+<action path="/gestion_utilisateur"  scope="request" type="Action.UtilisateurAction" name="gestion_utilisateur" validate="false"     >
+<forward name="ok" path="/Param_Utilisateur.jsp"></forward>
+</action>
+
+<action path="/valider_laisser_passer"  scope="session" type="Action.ValiderLaisserPasserAction" name="laisser_passer" validate="false"     >
+<forward name="ok" path="/Vehi_Valider_Laisser_Passer.jsp"></forward>
+</action>
+
+<action path="/gestion_entrer_carburant"  scope="request" type="Action.VehiEntrerCarburantAction" name="gestion_entrer_carburant" validate="false"     >
+<forward name="ok" path="/Bon_Entrer_Carburant.jsp"></forward>
+</action>
+
+
+<action path="/ordre_mission"  scope="session" type="Action.OrdreMissionAction" name="ordre_mission" validate="false"     >
+<forward name="ok" path="/Vehi_Ordre_Mission.jsp"></forward>
+</action>
+
+<action path="/valider_ordre_mission"  scope="session" type="Action.ValiderOrdreMissionAction" name="ordre_mission" validate="false"     >
+<forward name="ok" path="/Vehi_Valider_Ordre_Mission.jsp"></forward>
+</action>
+
+   
+<action path="/transfert_bon"  scope="request" type="Action.BonTransfertAction" name="transfert_bon" validate="false"     >
+<forward name="ok" path="/Bon_Transfert.jsp"></forward>
+</action>
+
+
+<action path="/aff_distance"  scope="request" type="Action.DistDistanceAction" name="aff_distance" validate="false"     >
+<forward name="ok" path="/Dist_Affichage_Distance.jsp"></forward>
+</action>
+
+
+<action path="/init_cpt"  scope="request" type="Action.DistInitCptAction" name="def_cpt" validate="false"     >
+<forward name="ok" path="/Dist_Def_Cpt.jsp"></forward>
+</action>
+
+<action path="/distribution_bon"  scope="request" type="Action.BonDistributionAction" name="distribution" validate="false"     >
+<forward name="ok" path="/Bon_Distribution.jsp"></forward>
+</action>
+
+
+<action path="/releve_vehicule"  scope="request" type="Action.DistReleveAction" name="aff_distance" validate="false"     >
+<forward name="ok" path="/Dist_Releve.jsp"></forward>
+</action>
+
+
+
+<action path="/valider_releve"  scope="request" type="Action.ValiderReleveAction" name="aff_distance" validate="false"     >
+<forward name="ok" path="/Dist_Valider_Relve.jsp"></forward>
+</action>
+
+
+<action path="/valider_entree_bon"  scope="request" type="Action.ValiderEntreeBonAction" name="gestion_entrer_carburant" validate="false"     >
+<forward name="ok" path="/Valider_entree_bon.jsp"></forward>
+</action>
+
+
+<action path="/sort"
+	type="fr.improve.struts.taglib.layout.sort.SortAction"
+	scope="request"
+	validate="false">
+</action>
+    
+<action path="/treeview"
+	type="fr.improve.struts.taglib.layout.treeview.TreeviewAction"
+	scope="request"
+	validate="false">
+</action>
+    </action-mappings>
+
+
+<!-- ======================================== Message Resources Definitions -->
+
+    <message-resources parameter="MessageResources" />
+
+
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property
+        property="pathnames"
+        value="/org/apache/struts/validator/validator-rules.xml,
+               /WEB-INF/validation.xml"/>
+  </plug-in>
+<plug-in className="fr.improve.struts.taglib.layout.workflow.LayoutPlugin"/>
+
+</struts-config>
+

@@ -1,0 +1,10 @@
+
+
+/* Copy from this line onward to style your select element */
+input.nice_select{width:275px;height:22px;cursor:default;color:#333;padding:8px 0 0 15px;background:url(../images/back-nice-select.jpg) no-repeat;border:0;float:none;}
+
+ul.virtual_select{max-height:170px;width:270px;overflow:auto;list-style-type:none;margin:0;padding:0;display:block;position:relative;top:-5px;left:10px;display:none;}
+ul.virtual_select li{display:block;height:18px;padding:2px 0 0 5px;margin:0;border:1px solid #ddd;border-bottom:1px solid #fafafa;border-top:0;cursor:pointer;background-color:#fff;}
+ul.virtual_select li.last{border-bottom:1px solid #ddd !important;}
+ul.virtual_select li.over, ul.virtual_select li.selected{background-color:#FAFAFA;color:#000;}
+ul.virtual_select li.selected{border:1px solid #ddd;}

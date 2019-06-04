@@ -1,0 +1,44 @@
+
+
+  #eop {position:absolute; top:610px; left:0px; font-size: 15px;}
+  #pagetitle {clear:left; padding-top:20px; margin-top:0px;}
+
+/*I am hiding all demo menus...*/
+  .demo {display:none;}
+/*...but I could have left them visible and set all image sizes to a standard 48px...*/
+  .demo img {border:0px none; padding:0px; width:48px; height:48px; vertical-align:top;}
+
+/*page switching buttons...*/
+  #buttons {padding-top:0px;}
+  #buttons input {margin-left:6px; border:1px solid #808080; font-size:12px;}
+/*shadowbox links/buttons...*/
+  #sboxbuttons {margin-top:3px;}
+  #sboxbuttons ul {list-style-type:none; padding:0px; margin:0px;}
+  #sboxbuttons li {float:left; padding:0px 0px 0px 0px; margin:0px;}
+  #goDownload, a.sboxbtn {display:block; border:0px; font-size:12px; padding:0px 0px;}
+  #goDownload {border:1px solid #ffffff;}
+  #goDownload:hover {text-decoration:underline;}
+
+/*shadowbox content styling...*/
+  #shadowbox_content.html {color:#333333; font-family:Arial; font-size:12px;}
+  #shadowbox_other_pages {position:absolute; top:10px; right:10px;}
+  #shadowbox_other_pages .sboxbtn {float:left; margin-left:6px;}
+  #shadowbox_other_pages .jqDkV {float:left; color:black; font-size:14px; padding-top:1px; font-weight:bold;}
+  div.sbox {padding:0px 0px 0px 0px; font-size: 20px;font-style: bold;}
+  div.sbox pre {padding:4px; margin:0px; background-color:#ffffff; border:1px solid #999999; font-family:Arial; font-size:11px;}
+/*general...*/
+  .hideThis {display:none;}
+  .inset200 {padding-left:200px;}
+  .inset130 {padding-left:130px;}
+  .changesList, .optionsList, .faqslist, .faqslist ul {padding-left:8px; margin-left:8px;}
+  .optionsList li, .faqslist li {padding-bottom:9px;}
+  .faqslist ul li {padding-bottom:2px;}
+  .grey {color:#999999;}
+  .dgrey {color:#666666;}
+  .red {color:#ff0000;}
+  .small {font-size:12px;}
+  .transformAdd {color:#0000ff;}
+  .transformAddV {color:#9900cc;}
+  .transformAddL {color:#009900;}
+  .transformRemove {color:#ff0000;}
+

@@ -1,0 +1,93 @@
+
+.str { color: #00A; }
+.kwd { color: #808; }
+.com { color: #777; }
+.typ { color: #088; }
+.lit { color: #800; }
+.pun { color: #000; }
+.pln { color: #002; }
+.tag { color: #008; }
+.atn { color: #606; }
+.atv { color: #080; }
+.dec { color: #606; }
+p { margin: 0 0 5px 0; }
+.box {
+	padding: 10px 20px;
+	background: #CCC;
+	border: 1px solid #AAA;
+	text-align: center;
+	font-size: 10px;
+	margin: 0 0 10px 0;
+	}	
+
+.drag {
+	height: 60px;
+	width: 250px;
+	float: left;
+	border: 1px solid #AAA;
+	background: #CCC;
+	margin: 10px;
+	cursor: move;
+	font-size: 14px;
+	text-align: center;
+	color: #AAA;
+
+	}
+	.drop .drag {
+		height: 60px;
+		width: 250px;
+		color:white;
+		font-family :Arial;
+		text-align: center;
+		font-size: 15px;
+	
+	
+		}
+.drop {
+	height: 200px;
+	width: 300px;
+	float: left;
+	border: 1px solid #AAA;
+	position: relative;
+	background :  #336699;
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;	
+	text-align:center;
+	
+
+	}	
+	.nodrop {
+	height: 200px;
+	width: 300px;
+	float: left;
+	border: 1px solid #AAA;
+	position: relative;
+	background :  #336699;
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;	
+	text-align:center;
+	
+
+	}	
+.ghost {
+	position: absolute;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	background-color: #CCF;
+	border-color: #AAD;
+	color: #AAD;
+	}
+.outline {
+	background-color: #FCC;
+	border-color: #DAA;
+	border-style: dashed;
+	color: #DAA;
+	}
+.active {
+	background-color: #CFC;
+	border-color: #ADA;
+	}
+

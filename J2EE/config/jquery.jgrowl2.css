@@ -1,0 +1,48 @@
+
+			div.jGrowl div.manilla {
+				background-color: 		#FFF1C2;
+				color: 					navy;
+			}
+			
+			div.jGrowl div.smoke {
+				background: url(smoke.png) no-repeat;
+				-moz-border-radius: 	0px;
+				-webkit-border-radius:	0px;
+				width: 					280px;
+				height: 				55px;
+				overflow: 				hidden;
+			}
+
+			div.jGrowl div.flora {
+				background: 			black ;
+				opacity: 				1;
+				filter: 				alpha(opacity = 100);
+				overflow: 				hidden;
+			}
+
+			div.jGrowl div.flora div.message {
+				padding: 				5px;
+				color: 					white;
+				
+			}
+			
+
+
+		
+			
+			div.jGrowl div.iphone div.header {
+				padding: 				7px;
+				padding-left: 			15px;
+				padding-right: 			15px;
+				font-size: 				17px;
+			}
+
+			div.jGrowl div.iphone div.close {
+				display: 				none;
+			}
+			
+			div#random {
+				width: 					1000px;
+				background-color: 		red;
+				line-height: 			60px;
+			}

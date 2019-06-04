@@ -1,0 +1,46 @@
+
+.fbbl_south_collapser{
+	background:  orange;
+	height: 0px;
+	width: 0px;
+	position: relative; 
+	cursor: pointer;
+	font-size: 1px;  
+	bottom: 37px; 
+    left: 484.5px;
+    z-index: 0;
+
+	
+}
+
+.fbbl_center,
+.fbbl_south {
+ text-align: center;
+
+}
+
+
+.fbbl_south{
+padding:10px;
+background-color:#3366A3;
+ border:1px solid white;
+
+}
+
+.fbbl_center{
+
+ background-image:url(../images/bg.png);
+ background-repeat:repeat-x;
+background-color:#4F9DE7;
+  overflow: hidden; 
+  position: fixed;
+  width:100%;
+  height100%;
+  right:0px;
+  left:0px; 
+  top: 0px; 
+  bottom: 65px;
+  border:1px solid white;
+  
+ 
+}

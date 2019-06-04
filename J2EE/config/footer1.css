@@ -1,0 +1,13 @@
+  #menu4 {	width: 100%;
+	bottom: 0px;
+	top:10px;
+	z-index:2;
+	position: absolute;
+	left: expression(document.documentElement.clientWidth /3.5+ 'px' );}
+  #menu4 img {padding:0px 0px;}
+   #menu4 div.jqDock {background-image:transparent; border:0px solid red;}
+  div.jqDock {background-color:transparent;}
+  div.jqDockLabel {border:0px none; padding:0px 0px; font-weight:bold; font-size:14px; font-style:italic; white-space:nowrap; color:#000000; background-color:transparent;}
+  div.jqDockLabelLink {cursor:pointer;}
+  div.jqDockLabelImage {cursor:default;}
+
